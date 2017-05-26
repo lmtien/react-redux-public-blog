@@ -1,3 +1,6 @@
+// https://github.com/reactjs/react-router-tutorial/tree/master/lessons/13-server-rendering
+// https://stackoverflow.com/questions/28553904/client-routing-using-react-router-and-server-side-routing
+// https://scotch.io/tutorials/react-on-the-server-for-beginners-build-a-universal-react-and-node-app
 const express = require('express');
 // const path = require('path');
 const app = express();
@@ -25,7 +28,7 @@ app.use(forceSSL());
 // For all GET requests, send back index.html
 // so that PathLocationStrategy can be used
 // app.get('/*', function(req, res) {
-//   res.sendFile(path.join(__dirname + '/dist/index.html'));
+//   res.sendFile(path.join(__dirname + '/index.html'));
 // });
 
 // Run the app by serving the static files
